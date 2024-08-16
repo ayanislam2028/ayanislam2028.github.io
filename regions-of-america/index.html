@@ -12,6 +12,85 @@
         body {
             background-color: white;
         }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            padding: 20px;
+
+
+
+        }
+
+        .navmenu {
+            grid-column: 1 / span 4;
+            grid-row: 1;
+        }
+
+
+        .needle {
+            grid-column: 1 / span 1;
+            grid-row: 1;
+
+        }
+
+        .empire {
+            grid-column: 2 / span 1;
+            grid-row: 1;
+
+        }
+
+        .sears {
+            grid-column: 3 / span 1;
+            grid-row: 1;
+
+        }
+
+        .bowl {
+            grid-column: 4 / span 1;
+            grid-row: 1;
+
+        }
+
+
+        .needletext {
+            grid-column: 1 / span 1;
+            grid-row: 2;
+
+        }
+
+        .empiretext {
+            grid-column: 2 / span 1;
+            grid-row: 2;
+
+        }
+
+        .searstext {
+            grid-column: 3 / span 1;
+            grid-row: 2;
+
+        }
+
+        .bowltext {
+            grid-column: 4 / span 1;
+            grid-row: 2;
+
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: end;
+        }
     </style>
 
 
@@ -22,24 +101,50 @@
 
 <body>
 
+    <div class="grid-item navmenu">
+        <ul class="nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="pnw.html">PNW</a></li>
+            <li><a href="south.html">SOUTH</a></li>
+            <li><a href="newengland.html">NEW ENGLAND</a></li>
+            <li><a href="midwest.html">MIDWEST</a></li>
+        </ul>
+    </div>
 
-
-
-    <ul class="nav">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="pnw.html">PNW</a></li>
-        <li><a href="south.html">SOUTH</a></li>
-        <li><a href="newengland.html">NEW ENGLAND</a></li>
-        <li><a href="midwest.html">MIDWEST</a></li>
-    </ul>
 
     <h1>HOME</h1>
 
-    <img src="images/imgbin-space-needle-observation-tower-car-space-needle-xDPguamwL21bAgDkpYMp1gM90.jpg" alt="">
+    <div class="grid-container">
 
+
+
+
+
+
+        <a href="pnw.html"> <img class="needle grid-item" style="width: 40%;"
+                src=" images/imgbin_space-needle-observation-tower-car-png.png" alt=""></a>
+        <a href="midwest.html"> <img class="empire grid-item" style="width: 40%;" src=" images/Untitled design.png"
+                alt=""> </a>
+        <a href="midwest.html"> <img class="sears grid-item" style="width: 40%;" src=" images/eme.jpeg" alt=""> </a>
+        <a href=""> <img class="bowl grid-item" style="width: 40%; "
+                src="images/90A99257-0FB0-471D-A85B-F48FD5712709_1_201_a.jpeg" alt=""> </a>
+
+
+        <h2 class="needletext" style="text-align: center;"> PNW </h2>
+        <h2 class="empiretext" style="text-align: center;"> NEW ENGLAND </h2>
+        <h2 class="searstext" style="text-align: center;"> MID WEST </h2>
+        <h2 class="bowltext" style="text-align: center;"> SOUTH </h2>
+        <h2> </h2>
+
+
+    </div>
+
+    <br><br>
     <div class="footer">
         <p>Ayan</p>
     </div>
+
+
 </body>
 
 </html>
