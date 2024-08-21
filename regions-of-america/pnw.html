@@ -7,6 +7,95 @@
     <title>PNW</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Passion+One:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        #rcorners1 {
+            border-radius: 25px;
+            background: #e1ecf9;
+            padding: 20px;
+            width: 300px;
+            height: 150px;
+        }
+
+        #rcorners2 {
+            border-radius: 25px;
+            background: #e1ecf9;
+            padding: 20px;
+            width: 300px;
+            height: 150px;
+        }
+
+        #rcorners3 {
+            border-radius: 25px;
+            background: #e1ecf9;
+            padding: 20px;
+            width: 300px;
+            height: 150px;
+        }
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            padding: 20px;
+        }
+
+        .into {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+
+        .states {
+            grid-column: 2 / span 2;
+            grid-row: 3;
+        }
+
+        .pop {
+            grid-column: 3 / span 2;
+            grid-row: 3;
+        }
+
+        .pop3 {
+            grid-column: 4 / span 2;
+            grid-row: 3;
+        }
+
+        .pic {
+            grid-column: 1 / span 4;
+            grid-row: 1;
+            background-image: url(images/eeee.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            height: 420px;
+        }
+
+        .h11 {
+            font-family: "Passion One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p {
+            font-family: "Belanosima", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 
 </head>
 
@@ -20,11 +109,52 @@
         <li><a href="midwest.html">MIDWEST</a></li>
     </ul>
 
-    <h1>PNW / CASCADIA.</h1>
+    <div class="grid-container">
 
-    <div class="footer">
-        <p>Ayan</p>
+        <div id="rcorners1" class="into">
+            <h1> CITIES </h1>
+            <p>Some of the largest cites in the PNW are, Vancouver, Surrey, Seattle, Tacoma, Portland, Salem, Los
+                Angeles,San
+                Diego. </p>
+        </div>
+
+
+        <div id="rcorners2" class="states">
+            <h1> STATES </h1>
+            <p>The PNW consists of the states, Washington, Oregon, California, and British Columbia. </p>
+        </div>
+
+
+        <div id="rcorners3" class="pop">
+            <h1> POPULATION </h1>
+            <p>The PNW has a population of around 58 million people. The most coming form Cali, and the least from
+                Oregon.</p>
+        </div>
+
+        <div class="grid-item pic">
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="footer">
+            <p>Ayan</p>
+        </div>
+
     </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
 
 </body>
 
